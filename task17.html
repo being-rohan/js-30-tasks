@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+	<title>JS Task 17</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.3/dist/sweetalert2.min.css">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container" id="task17">
+		<div class="row">
+			<div class="col-sm-12">
+				<a href='index.html' class="my-2 d-inline-block"><i class='fa fa-arrow-left mr-2'></i>Task List</a>
+				<div class="card p-3 mb-4">
+					<h4>Task 17 - Get first and last value from array</h4>	
+					<ul class="mb-0">
+						<li>Take one array and show first and last value in alert</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.3/dist/sweetalert2.all.min.js"></script>
+
+	<script>
+		const cl = console.log;
+
+		const nums = [44,23,45,34,11,24,5,26,32]
+
+		Swal.fire({
+				position: "top-center",
+				icon: "success",
+				title: `The first number is ${nums[0]} and last number is ${nums[nums.length - 1]} of [${nums}]`,
+				showConfirmButton: false,
+				timer: 1500
+			});
+
+	</script>
+</body>
+</html>
